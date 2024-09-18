@@ -184,9 +184,9 @@ while not close:
     if keys[pygame.K_s] and not game_over:
         player.move(-4 if not run else -8)
     if keys[pygame.K_a] and not game_over:
-        player.angle -= 4
+        player.angle -= 3
     if keys[pygame.K_d] and not game_over:
-        player.angle += 4
+        player.angle += 3
     if keys[pygame.K_SPACE] and reload >= 20 and not game_over:
         bullets.append(Bullet(client_number=host.client_number, generate_image=generate_local_images, images=images, screen_size=screen_size, gun=gun, bullets=bullets, speed=14))
         reload = 0
